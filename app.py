@@ -16,7 +16,7 @@ app = flask.Flask("big-scroller")
 def index():
     return flask.render_template('index.html', phrases=json.dumps(get_phrases()))
 
-@app.route('/update')
+@app.route('/update', methods=['GET', 'POST'])
 def update():
     if flask.request.method == "GET":
         return flask.render_template('update.html')
