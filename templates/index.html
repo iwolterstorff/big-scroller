@@ -3,7 +3,7 @@
     <head>
         <title>Hi</title>
         <script>
-            let phrases = JSON.parse('{{ phrases }}'.replace("&#34;", "\""));
+            let phrases = JSON.parse('{{ phrases }}'.replace(/&#34;/g, "\""));
         </script>
     </head>
     <body>
