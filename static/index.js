@@ -5,10 +5,7 @@
 // Example 17-3: Scrolling headlines 
 
 // An array of news headlines
-var headlines = [
-  "Processing downloads break downloading record.", 
-  "New study shows computer programming lowers cholesterol.",
-];
+var headlines = phrases;
 
 var x; // Horizontal location
 var index = 0;
