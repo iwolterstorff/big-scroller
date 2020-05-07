@@ -4,7 +4,7 @@ import os
 import flask
 import pymongo
 mongo_url = os.getenv('MONGODB_URI')
-db = pymongo.MongoClient(mongo_url).get_database()
+db = pymongo.MongoClient(mongo_url, retryWrites=False).get_database()
 collection = db.phrases
 
 def get_phrases():
