@@ -22,7 +22,7 @@ function draw() {
   fill(255);
 
   // Display headline at x location
-  textFont("Arial", 900);
+  textFont("Arial", 700);
   textAlign(LEFT);
 
   // A specific String from the array is displayed according to the value of the "index" variable.
