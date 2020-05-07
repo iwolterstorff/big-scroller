@@ -23,3 +23,4 @@ def update():
     else:
         new_phrase = flask.request.form.get('phrase')
         collection.insert_one({"phrase": new_phrase})
+        return flask.redirect('/')
