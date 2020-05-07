@@ -25,14 +25,14 @@ function draw() {
   fill(255);
 
   // Display headline at x location
-  textFont("Arial", 16);
+  textFont("Arial", 1000);
   textAlign(LEFT);
 
   // A specific String from the array is displayed according to the value of the "index" variable.
-  text(headlines[index], x, height-20); 
+  text(headlines[index], x, height-100); 
 
   // Decrement x
-  x = x - 3;
+  x = x - 20;
 
   // If x is less than the negative width, then it is off the screen
   // textWidth() is used to calculate the width of the current String.
