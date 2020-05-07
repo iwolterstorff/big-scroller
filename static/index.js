@@ -14,15 +14,15 @@ var x; // Horizontal location
 var index = 0;
 
 function setup() {
-  createCanvas(480, 270);
+  createCanvas(windowWidth, windowHeight);
 
   // Initialize headline offscreen
   x = width;
 }
 
 function draw() {
-  background(255);
-  fill(0);
+  background(0);
+  fill(255);
 
   // Display headline at x location
   textFont("Arial", 16);
